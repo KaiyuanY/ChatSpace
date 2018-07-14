@@ -1,0 +1,15 @@
+Key feature:
+	- Facebook based login
+	- Email/password login/sign up
+	- database storage with Firebase
+	- Asynchronouly load when new chat message comes in, or create new chat and add to the list. 
+	- Media picker, sending image or video
+Technology Items:
+	- JSQMessagesViewController
+	- Firebase 
+	- FBSDK
+	- Real time updates using internet and Firebase
+	- Loading chats when in background
+
+//I was planning to build a 1 to 1 real time chat app, with contact list and chat list, but did not have enough time to do so. So in the app bundle there are some irrelevant view controller classes. Just ignore them, I am going to continue building on top of this. The relevant classes for this project are AppDelegate, LoginViewController, and ChatViewController
+
