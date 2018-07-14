@@ -27,7 +27,7 @@
   return [GRXImmediateWriter writerWithEnumerator:enumerator];
 }
 
-+ (instancetype)writerWithValueSupplier:(id (^)(void))block {
++ (instancetype)writerWithValueSupplier:(id (^)())block {
   return [GRXImmediateWriter writerWithValueSupplier:block];
 }
 

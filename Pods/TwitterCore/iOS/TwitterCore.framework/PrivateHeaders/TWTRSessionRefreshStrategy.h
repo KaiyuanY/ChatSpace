@@ -15,10 +15,6 @@
  *
  */
 
-/**
- This header is private to the Twitter Core SDK and not exposed for public SDK consumption
- */
-
 @class TWTRAuthConfig;
 @protocol TWTRAPIServiceConfig;
 @protocol TWTRBaseSession;

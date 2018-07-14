@@ -15,10 +15,6 @@
  *
  */
 
-/**
- This header is private to the Twitter Core SDK and not exposed for public SDK consumption
- */
-
 @class TFSScribe;
 @class TWTRScribeEvent;
 @class TWTRAPIClient;
@@ -26,7 +22,7 @@
 @class TWTRGuestSession;
 @class TWTRNetworkingPipeline;
 @class TWTRSessionStore;
-@class TWTRNetworking;
+@class TwitterNetworking;
 @protocol TWTRAuthSession;
 @protocol TWTRAPIServiceConfig;
 

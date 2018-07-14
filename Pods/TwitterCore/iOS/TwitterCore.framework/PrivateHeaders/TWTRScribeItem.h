@@ -15,10 +15,6 @@
  *
  */
 
-/**
- This header is private to the Twitter Core SDK and not exposed for public SDK consumption
- */
-
 @class TWTRScribeFilterDetails;
 @class TWTRScribeMediaDetails;
 @class TWTRScribeCardEvent;
@@ -33,7 +29,12 @@ NS_ASSUME_NONNULL_BEGIN
  *  check `client_app.thrift` before adding more fields. The raw values here are exactly as they appear
  *  on the backend so do not change without double checking against the thrift IDL.
  */
-typedef NS_ENUM(NSUInteger, TWTRScribeItemType) { TWTRScribeItemTypeTweet = 0, TWTRScribeItemTypeUser = 3, TWTRScribeItemTypeMessage = 6, TWTRScribeItemTypeCustomTimeline = 17 };
+typedef NS_ENUM(NSUInteger, TWTRScribeItemType) {
+    TWTRScribeItemTypeTweet = 0,
+    TWTRScribeItemTypeUser = 3,
+    TWTRScribeItemTypeMessage = 6,
+    TWTRScribeItemTypeCustomTimeline = 17
+};
 
 /**
  *  Model object describing Scribe event details. `Items` is a property of `EventDetails` containing

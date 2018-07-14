@@ -15,10 +15,6 @@
  *
  */
 
-/**
- This header is private to the Twitter Core SDK and not exposed for public SDK consumption
- */
-
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
@@ -26,65 +22,27 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TWTRDictUtil : NSObject
 
-/**
- *  Returns an array for the specified key. Returns nil if the value does not exist for the key or the return type is not an array.
- */
-+ (NSArray *)twtr_arrayForKey:(NSString *)key inDict:(NSDictionary *)dict;
++ (CGFloat)CGFloatForKey:(NSString *)key fromDict:(NSDictionary *)dict;
++ (double)doubleForKey:(NSString *)key fromDict:(NSDictionary *)dict;
++ (BOOL)boolForKey:(NSString *)key fromDict:(NSDictionary *)dict;
++ (NSInteger)intForKey:(NSString *)key fromDict:(NSDictionary *)dict;
++ (long long)longlongForKey:(NSString *)key fromDict:(NSDictionary *)dict;
++ (NSUInteger)unsignedIntegerForKey:(NSString *)key fromDict:(NSDictionary *)dict;
++ (NSString *)stringFromNumberForKey:(NSString *)key fromDict:(NSDictionary *)dict;
++ (id)objectForKey:(NSString *)key fromDict:(NSDictionary *)dict;
++ (NSString *)stringForKey:(NSString *)key fromDict:(NSDictionary *)dict;
++ (NSDate *)dateForKey:(NSString *)key fromDict:(NSDictionary *)dict;
++ (NSDictionary *)dictForKey:(NSString *)key fromDict:(NSDictionary *)dict;
++ (NSArray *)arrayForKey:(NSString *)key fromDict:(NSDictionary *)dict;
+
+@end
+
+@interface TWTRArrayUtil : NSObject
 
 /**
- *  Returns a CGFloat for the specified key.
+ * Returns a CGFloat at the given index. This method does not check bounds.
  */
-+ (CGFloat)twtr_CGFloatForKey:(NSString *)key inDict:(NSDictionary *)dict;
-
-/**
- *  Returns a double for the specified key.
- */
-+ (double)twtr_doubleForKey:(NSString *)key inDict:(NSDictionary *)dict;
-
-/**
- *  Returns a bool for the specified key.
- */
-+ (BOOL)twtr_boolForKey:(NSString *)key inDict:(NSDictionary *)dict;
-
-/**
- *  Returns an int for the specified key.
- */
-+ (NSInteger)twtr_intForKey:(NSString *)key inDict:(NSDictionary *)dict;
-
-/**
- *  Returns a long long for the specified key.
- */
-+ (long long)twtr_longlongForKey:(NSString *)key inDict:(NSDictionary *)dict;
-
-/**
- *  Returns an unsigned integer for the specified key.
- */
-+ (NSUInteger)twtr_unsignedIntegerForKey:(NSString *)key inDict:(NSDictionary *)dict;
-
-/**
- *  Returns a string from a number for the specified key. Returns nil if the value does not exist for the key or the return type is not a string.
- */
-+ (NSString *)twtr_stringFromNumberForKey:(NSString *)key inDict:(NSDictionary *)dict;
-
-/**
- *  Returns a generic object for the specified key. Returns nil if the value does not exist.
- */
-+ (id)twtr_objectForKey:(NSString *)key inDict:(NSDictionary *)dict;
-
-/**
- *  Returns a string for the specified key. Returns nil if the value does not exist for the key or the return type is not a string.
- */
-+ (NSString *)twtr_stringForKey:(NSString *)key inDict:(NSDictionary *)dict;
-
-/**
- *  Returns a date for the specified key. Returns nil if the value does not exist for the key or the return type is not a date.
- */
-+ (NSDate *)twtr_dateForKey:(NSString *)key inDict:(NSDictionary *)dict;
-
-/**
- *  Returns a dictionary for the specified key. Returns nil if the value does not exist for the key or the return type is not a dictionary.
- */
-+ (NSDictionary *)twtr_dictForKey:(NSString *)key inDict:(NSDictionary *)dict;
++ (CGFloat)CGFloatAtIndex:(NSInteger)index;
 
 @end
 

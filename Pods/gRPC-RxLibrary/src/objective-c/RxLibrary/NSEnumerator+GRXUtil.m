@@ -33,7 +33,7 @@
   return [[GRXNSScalarEnumerator alloc] initWithValue:value];
 }
 
-+ (NSEnumerator *)grx_enumeratorWithValueSupplier:(id (^)(void))block {
++ (NSEnumerator *)grx_enumeratorWithValueSupplier:(id (^)())block {
   return [[GRXNSBlockEnumerator alloc] initWithValueSupplier:block];
 }
 @end

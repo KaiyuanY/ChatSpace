@@ -16,10 +16,6 @@
  */
 
 /**
- This header is private to the Twitter Core SDK and not exposed for public SDK consumption
- */
-
-/**
  *  Protocol for loggers that support error logging.
  */
 @protocol TWTRErrorLogger <NSObject>

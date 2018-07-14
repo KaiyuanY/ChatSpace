@@ -15,10 +15,6 @@
  *
  */
 
-/**
- This header is private to the Twitter Core SDK and not exposed for public SDK consumption
- */
-
 #if IS_UIKIT_AVAILABLE
 #import <UIKit/UIKit.h>
 #else

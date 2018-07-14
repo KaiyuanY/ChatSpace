@@ -15,10 +15,6 @@
  *
  */
 
-/**
- This header is private to the Twitter Core SDK and not exposed for public SDK consumption
- */
-
 #import <Foundation/Foundation.h>
 
 FOUNDATION_EXTERN NSString *const TWTRScribeClientEventNamespaceClientKey;
